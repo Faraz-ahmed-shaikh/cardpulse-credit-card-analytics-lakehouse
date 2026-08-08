@@ -2,7 +2,7 @@
 
 CardPulse is an end-to-end batch ELT platform for a Indian credit card business, built on **Databricks, PySpark, and Delta Lake**. It ingests customers, cards, merchants, and transactions from a REST API, PostgreSQL database, and a CSV file, processes them through a **Bronze → Silver → Gold** architecture, and produces business-ready datasets for Tableau.
 
-The focus isn't just moving data — it's making the pipeline **incremental, idempotant, repeatable, validated, and able to track historical change**, the questions that come up once a pipeline has to run more than once.
+The focus isn't just moving data — it's making the pipeline **incremental, idempotent, repeatable, validated, and able to track historical change**, the questions that come up once a pipeline has to run more than once.
 
 ---
 
@@ -63,7 +63,7 @@ Metadata → last_processed_timestamp → API updated_after → New Records → 
 - **Type 1** → update the current record in place (e.g. a card count)
 - **Type 2** → close the current version, open a new historical one (e.g. a risk grade change)
 
-**Merge Based Idempotancy** — Apart from SCD Type 1 & 2 in Customers, the Cards and Transactions uses Merge based idempotancy (which supports Type 1 SCD)
+**MERGE-based idempotency** — Apart from SCD Type 1 & 2 in Customers, the Cards and Transactions uses Merge based idempotancy (which supports Type 1 SCD)
 
 This avoids creating unnecessary customer history for every trivial field update.
 
@@ -103,7 +103,7 @@ CardPulse/
 ├── dashboards/       # Tableau workbook & previews
 ├── data/             # Source & Gold visualization data
 ├── notebooks/        # Databricks pipeline notebooks
-└── src/              # Pipeline Code in .py, If notebooks failes to open
+└── src/              # Pipeline Code in .py, If notebooks fail to open
 ```
 
 ## 🧰 Tech Stack
