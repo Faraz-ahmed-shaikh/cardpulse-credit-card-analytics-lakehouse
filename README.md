@@ -1,6 +1,6 @@
 # CardPulse: Credit Card Analytics Lakehouse
 
-CardPulse is an end-to-end batch ELT platform for a fictional credit card business, built on **Databricks, PySpark, and Delta Lake**. It ingests customers, cards, merchants, and transactions from a REST API, PostgreSQL database, and a CSV file, processes them through a **Bronze → Silver → Gold** architecture, and produces business-ready datasets for Tableau.
+CardPulse is an end-to-end batch ELT platform for a Indian credit card business, built on **Databricks, PySpark, and Delta Lake**. It ingests customers, cards, merchants, and transactions from a REST API, PostgreSQL database, and a CSV file, processes them through a **Bronze → Silver → Gold** architecture, and produces business-ready datasets for Tableau.
 
 The focus isn't just moving data — it's making the pipeline **incremental, idempotant, repeatable, validated, and able to track historical change**, the questions that come up once a pipeline has to run more than once.
 
@@ -44,7 +44,7 @@ Business-facing datasets:
 - `customers_spend_summary` → how customers are spending
 - `portfolio_risk_summary` → credit exposure and risk
 - `customer_segmentation_summary` → who the customers are and how they behave
-
+- The dashboards are available at Tableau Public: _https://public.tableau.com/shared/GKXQR56WY?:display_count=n&:origin=viz_share_link_
 ---
 
 ## ⚙️ Key Engineering Decisions
