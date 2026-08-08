@@ -103,7 +103,7 @@ CardPulse/
 ├── dashboards/       # Tableau workbook & previews
 ├── data/             # Source & Gold visualization data
 ├── notebooks/        # Databricks pipeline notebooks
-└── src/              # Reusable Python modules
+└── src/              # Pipeline Code in .py, If notebooks failes to open
 ```
 
 ## 🧰 Tech Stack
