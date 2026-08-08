@@ -44,7 +44,7 @@ Business-facing datasets:
 - `customers_spend_summary` → how customers are spending
 - `portfolio_risk_summary` → credit exposure and risk
 - `customer_segmentation_summary` → who the customers are and how they behave
-- The dashboards are available at Tableau Public: _https://public.tableau.com/shared/GKXQR56WY?:display_count=n&:origin=viz_share_link_
+- The dashboards are available at Tableau Public: _https://public.tableau.com/views/cardplus_dashboards/CardPulseCustomerIntelligenceSegmentation?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link_
 ---
 
 ## ⚙️ Key Engineering Decisions
